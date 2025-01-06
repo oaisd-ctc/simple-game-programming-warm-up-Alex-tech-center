@@ -7,14 +7,14 @@ Console.WriteLine("Dice Game");
 Console.WriteLine();
 Console.WriteLine("When playing this game, you will go against the computer for 10 rounds.");
 Console.WriteLine("Every round the computer will roll the 6 sided die and then you will roll the die."); 
-Console.WriteLine("Whoever rolls the highest number wins the round. Whoever was won more rounds wins the game.");
+Console.WriteLine("Whoever rolls the highest number wins the round. Whoever was won the most rounds wins the game.");
 Console.WriteLine();
 Console.WriteLine("Press any key to start the game...");
 Console.ReadKey(true);
 Console.WriteLine();
 Console.WriteLine();
 
-for (int i = 0; i <= 10; i++)
+for (int i = 1; i <= 9; i++)
 {
     Console.WriteLine($"Round {i + 1}");
     int rivalRandomNum = Random.Shared.Next(1,7);
